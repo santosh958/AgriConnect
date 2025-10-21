@@ -17,7 +17,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/register', form);
+      const res = await axios.post('https://agriconnect-backend-acpp.onrender.com/register', form);
 
       // Save details to localStorage
       localStorage.setItem("userName", form.name);
